@@ -1,4 +1,150 @@
-/* For debugging css ONLY! */
-*{
-    outline: 1px solid hotpink;
+* {
+  outline: 1px solid hotpink; /* For debugging css ONLY! */
+  box-sizing: border-box;
+}
+
+body {
+  outline: 2px dashed blue;
+  margin: 0;
+  height: 100vh;
+  font: 1rem sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER content */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 24px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-circle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.btn-circle:hover {
+    background-color: #e4e2e2;
+  }
+  
+  .btn-circle > img {
+      border-radius: 50%;
+  }
+
+/* MAIN content */
+main {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 4vh 0;
+}
+
+form {
+    padding: 32px;
+}
+
+.search-input {
+    /* outline: 2px dashed blue; */
+    width: 600px;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid gainsboro;
+    padding: 4px 16px;
+    gap: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input:hover {
+    box-shadow: 0 3px 8px 0 gainsboro;
+}
+
+.search-input > input {
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    gap: 16px;
+}
+
+.btn-search {
+    border: 0;
+    padding: 10px 16px;
+    border-radius: 4px;
+    background-color: hsla(0, 0%, 0%, 0.05);
+}
+
+.btn-search:hover {
+    outline: 1px solid gainsboro;
+    box-shadow: 0 4px 5px 0 gainsboro;
+}
+
+/* FOOTER content */
+
+footer {
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+footer > p {
+    margin: 16px 24px;
+}
+
+hr {
+    border: .7px solid rgba(220, 220, 220);
+}
+
+/* MEDIA QUERIES */
+@media  (max-width: 670px) {
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 90vw;
+    }
 }
