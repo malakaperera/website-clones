@@ -1,10 +1,11 @@
 * {
-  outline: 1px solid hotpink; /* For debugging css ONLY! */
+    /* For debugging css ONLY!  */
+  /* outline: 1px solid hotpink;  */
   box-sizing: border-box;
 }
 
 body {
-  outline: 2px dashed blue;
+  /* outline: 2px dashed blue; */
   margin: 0;
   height: 100vh;
   font: 1rem sans-serif;
